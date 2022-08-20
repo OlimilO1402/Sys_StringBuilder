@@ -1,0 +1,151 @@
+#define LCID_ENGLISHGBUK 0x0809  //Englisch (Großbritannien)
+#define LCID_ENGLISHUS   0x0409  //Englisch (USA)
+#define LCID_GERMANY     0x0407  //Deutsch (Deutschland)
+#define LCID_CROATIA     0x041A  //Kroatisch
+#define LCID_CROATIABH   0x101A  //Kroatisch (Bosnien Herzegowina)
+#define LCID_GREECE      0x0408  //Griechisch
+
+/////////////////////////////////////////////////////////////////////////////
+// Program Icons 
+// first  Icon for the program itself
+// second Icon for a registered filetype 
+0                       ICON                    "Icons\ProgIcon8bit.ico"
+1                       ICON                    "Icons\FileIcon8bit.ico"
+
+#define RT_MANIFEST 24
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//Public Declare Sub InitCommonControls Lib "comctl32.dll" ()
+1                       RT_MANIFEST             "Manifest\manifest.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Some Useful Cursors
+//
+201                     CURSOR                  "Cursors\H_POINT.cur"
+202                     CURSOR                  "Cursors\HO_SPLIT.cur"
+203                     CURSOR                  "Cursors\VE_SPLIT.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmaps for Toolbars
+// FileMenu
+101                     BITMAP                  "Buttons\FileNew.bmp"
+102                     BITMAP                  "Buttons\FileOpen.bmp"
+103                     BITMAP                  "Buttons\FileSave.bmp"
+104                     BITMAP                  "Buttons\FileSendEml.bmp"
+105                     BITMAP                  "Buttons\FileImport.bmp"
+106                     BITMAP                  "Buttons\FilePrintPrv.bmp"
+107                     BITMAP                  "Buttons\FilePrinter.bmp"
+108                     BITMAP                  "Buttons\FilePrint.bmp"
+// EditMenu
+201                     BITMAP                  "Buttons\EditUndo.bmp"
+202                     BITMAP                  "Buttons\EditRedo.bmp"
+203                     BITMAP                  "Buttons\EditCut.bmp"
+204                     BITMAP                  "Buttons\EditCopy.bmp"
+205                     BITMAP                  "Buttons\EditPaste.bmp"
+206                     BITMAP                  "Buttons\EditDelete.bmp"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+#define IDOK            011
+#define IDCancel        012
+#define IDDelete        013
+
+#define IDmnuFile       101  
+#define IDmnuFileNew    102
+#define IDmnuFileOpen   103
+#define IDmnuFileSave   104
+#define IDmnuFileSaveAs 105
+#define IDmnuFileExit   106
+
+#define IDmnuEdit       201  
+#define IDmnuEditUndo   202
+#define IDmnuEditRedo   203
+#define IDmnuEditCut    204
+#define IDmnuEditCopy   205
+#define IDmnuEditPaste  206
+
+#define IDmnuView       301
+
+STRINGTABLE DISCARDABLE 
+LANGUAGE LCID_ENGLISHUS, 0 
+BEGIN
+
+IDOK            " &OK "
+IDCancel        " &Cancel "
+IDDelete        "Delete"
+
+IDmnuFile       "&File"
+IDmnuFileNew    "&New"
+IDmnuFileOpen   "&Open"
+IDmnuFileSave   "&Save"
+IDmnuFileSaveAs "Save &As..."
+IDmnuFileExit   "E&xit" 
+
+IDmnuEdit       "&Edit"
+IDmnuEditUndo   "&Undo"
+IDmnuEditRedo   "&Redo"
+IDmnuEditCut    "Cut"
+IDmnuEditCopy   "Copy"
+IDmnuEditPaste  "Paste"
+
+IDmnuView       "&View"
+
+END
+
+STRINGTABLE DISCARDABLE 
+LANGUAGE LCID_GERMANY, 0 
+BEGIN
+IDOK            " &OK "
+IDCancel        " Abbre&chen "
+IDDelete        "Löschen"
+
+IDmnuFile       "Datei"
+IDmnuFileNew    "Neu"
+IDmnuFileOpen   "Öffnen"
+IDmnuFileSave   "Speichern"
+IDmnuFileSaveAs "Speichern unter..."
+IDmnuFileExit   "Be&enden" 
+
+IDmnuEdit       "B&earbeiten"
+IDmnuEditUndo   "Rückgängig"
+IDmnuEditRedo   "Wiederherstellen"
+IDmnuEditCut    "Ausschneiden"
+IDmnuEditCopy   "Kopieren"
+IDmnuEditPaste  "Einfügen"
+
+IDmnuView       "&Ansicht"
+
+END
+
+STRINGTABLE DISCARDABLE 
+LANGUAGE LCID_CROATIA, 0
+BEGIN
+
+IDOK            " &OK "
+IDCancel        " Odu&stani "
+IDDelete        "O&èisti"
+
+IDmnuFile       "&Datoteka"
+IDmnuFileNew    "&Nova"
+IDmnuFileOpen   "&Otvori..."
+IDmnuFileSave   "&Spremi"
+IDmnuFileSaveAs "Spremi &kao..."
+IDmnuFileExit   "Iz&laz"
+
+IDmnuEdit       "&Ureðivanje"
+//IDmnuEditUndo
+//IDmnuEditRedo
+//IDmnuEditCut
+//IDmnuEditCopy
+//IDmnuEditPaste
+
+END
+
+
