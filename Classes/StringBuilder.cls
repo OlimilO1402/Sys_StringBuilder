@@ -191,6 +191,9 @@ Public Sub AppendS(ByRef StrValue As String) 'As StringBuilder
     '   Set Append = Me
 End Sub
 
+Public Function AppendLine(Value As String) As StringBuilder
+    Set AppendLine = Me.Append(Value & vbCrLf)
+End Function
 'Public Function AppendFormat(ByVal format As String, ByVal arg0 As Object) As System.Text.StringBuilder
 'Public Function AppendFormat(ByVal format As String, ByVal arg0 As Object, ByVal arg1 As Object) As System.Text.StringBuilder
 'Public Function AppendFormat(ByVal format As String, ByVal arg0 As Object, ByVal arg1 As Object, ByVal arg2 As Object) As System.Text.StringBuilder

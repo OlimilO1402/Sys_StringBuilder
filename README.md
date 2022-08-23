@@ -8,23 +8,12 @@
 
 Project started around mid 2005  
 
-ReadMe.txt of 2005 under WindowsXP:
-StringBuilderBench what is it?
-This is a benchmark program which tests the speed of different 
-implementaionts of the class StringBuilder in VBC
-you can find many at least two different ones: 
-* Jost Schwider's Concat
-* Steve McMahon's StringBuilder
-Though using MidB is definitely faster than using RtlMoveMemory.  
-But Jost Schwiders algorithm has one obvious catch in it.
-So the speed could be increased about the factor 7 just by 
-using a faster string allocation method.
-
-```vba
-Property Get Value()
-End Property
-```
-
-[Link text Here](https://link-url-here.org)  
+ReadMe.txt of 2005 under WindowsXP:  
+StringBuilderBench what is it?  
+This is a benchmark program for testing the speed of different implementations of the StringBuilder class in VBC.
+you can find many at least two different ones:  
+* Jost Schwider's Concat  
+* Steve McMahon's StringBuilder  
+Though using MidB is definitely faster than using RtlMoveMemory, the speed could be increased about the factor 7 just by using a faster string allocation method.  
 
 ![<AppName> Image](Resources/<AppName>.png "<AppName> Image")
